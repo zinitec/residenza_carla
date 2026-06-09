@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Report Fotografico Asfaltatura - Residenza Carla</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .photo-card img {
+      transition: transform 0.45s ease, filter 0.45s ease;
+    }
+
+    .photo-card:hover img {
+      transform: scale(1.045);
+      filter: contrast(1.03);
+    }
+
+    .lightbox {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .lightbox.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox img {
+      transform: scale(0.96);
+      transition: transform 0.25s ease;
+    }
+
+    .lightbox.active img {
+      transform: scale(1);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <main class="min-h-screen">
+    <header class="bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 sm:py-16">
+        <div class="max-w-4xl">
+          <p class="text-sm font-semibold tracking-wide uppercase text-slate-500 mb-3">
+            Documentazione tecnica fotografica
+          </p>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-slate-900">
+            Report Fotografico Asfaltatura - Residenza Carla
+          </h1>
+
+          <p class="mt-5 text-base sm:text-lg leading-8 text-slate-600">
+            Il presente documento raccoglie una selezione di immagini finalizzate a documentare, in modo oggettivo e ordinato, lo stato delle superfici prima dell&#039;intervento e i principali difetti di posa riscontrati successivamente ai lavori di asfaltatura.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-5 sm:px-8 py-12 sm:py-16">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+        <div>
+          <p class="text-sm font-semibold tracking-wide uppercase text-slate-500">Sezione 1</p>
+          <h2 class="mt-2 text-2xl sm:text-3xl font-semibold text-slate-900">
+            Prima dell&#039;intervento - Asfalto bagnato
+          </h2>
+        </div>
+
+        <p class="max-w-2xl text-sm sm:text-base text-slate-600">
+          Documentazione dello stato precedente all&#039;intervento con asfalto bagnato.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <article class="photo-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow duration-300">
+          <button class="block w-full text-left" type="button" data-lightbox="prima-1.jpg" data-caption="Prima dell&#039;intervento - Asfalto bagnato 1">
+            <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+              <img src="prima-1.jpg" alt="Prima dell&#039;intervento - Asfalto bagnato 1" class="w-full h-full object-cover cursor-zoom-in" />
+            </div>
+          </button>
+
+          <div class="p-4">
+            <p class="text-sm font-medium text-slate-800">Prima dell&#039;intervento - Asfalto bagnato 1</p>
+            <p class="mt-1 text-xs leading-5 text-slate-500">Vista generale della zona prima dell&#039;intervento con asfalto bagnato.</p>
+
+            <button
+              type="button"
+              data-lightbox="prima-1.jpg"
+              data-caption="Prima dell&#039;intervento - Asfalto bagnato 1"
+              class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition"
+            >
+              Zoom dettagli
+            </button>
+          </div>
+        </article>
+      
+        <article class="photo-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow duration-300">
+          <button class="block w-full text-left" type="button" data-lightbox="prima-2.jpg" data-caption="Prima dell&#039;intervento - Asfalto bagnato 2">
+            <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+              <img src="prima-2.jpg" alt="Prima dell&#039;intervento - Asfalto bagnato 2" class="w-full h-full object-cover cursor-zoom-in" />
+            </div>
+          </button>
+
+          <div class="p-4">
+            <p class="text-sm font-medium text-slate-800">Prima dell&#039;intervento - Asfalto bagnato 2</p>
+            <p class="mt-1 text-xs leading-5 text-slate-500">Dettaglio dello stato della superficie prima dell&#039;intervento.</p>
+
+            <button
+              type="button"
+              data-lightbox="prima-2.jpg"
+              data-caption="Prima dell&#039;intervento - Asfalto bagnato 2"
+              class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition"
+            >
+              Zoom dettagli
+            </button>
+          </div>
+        </article>
+      
+        <article class="photo-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow duration-300">
+          <button class="block w-full text-left" type="button" data-lightbox="prima-3.jpg" data-caption="Prima dell&#039;intervento - Asfalto bagnato 3">
+            <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+              <img src="prima-3.jpg" alt="Prima dell&#039;intervento - Asfalto bagnato 3" class="w-full h-full object-cover cursor-zoom-in" />
+            </div>
+          </button>
+
+          <div class="p-4">
+            <p class="text-sm font-medium text-slate-800">Prima dell&#039;intervento - Asfalto bagnato 3</p>
+            <p class="mt-1 text-xs leading-5 text-slate-500">Ulteriore dettaglio della zona interessata prima dei lavori.</p>
+
+            <button
+              type="button"
+              data-lightbox="prima-3.jpg"
+              data-caption="Prima dell&#039;intervento - Asfalto bagnato 3"
+              class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition"
+            >
+              Zoom dettagli
+            </button>
+          </div>
+        </article>
+      
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-5 sm:px-8 pb-12 sm:pb-16">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+        <div>
+          <p class="text-sm font-semibold tracking-wide uppercase text-slate-500">Sezione 2</p>
+          <h2 class="mt-2 text-2xl sm:text-3xl font-semibold text-slate-900">
+            Dopo l&#039;intervento - Asfalto bagnato
+          </h2>
+        </div>
+
+        <p class="max-w-2xl text-sm sm:text-base text-slate-600">
+          Rilievi fotografici successivi all&#039;intervento con asfalto bagnato e ristagni.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <article class="photo-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow duration-300">
+          <button class="block w-full text-left" type="button" data-lightbox="Dopo-pioggia-1.jpg" data-caption="Dopo l&#039;intervento - Asfalto bagnato 1">
+            <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+              <img src="Dopo-pioggia-1.jpg" alt="Dopo l&#039;intervento - Asfalto bagnato 1" class="w-full h-full object-cover cursor-zoom-in" />
+            </div>
+          </button>
+
+          <div class="p-4">
+            <p class="text-sm font-medium text-slate-800">Dopo l&#039;intervento - Asfalto bagnato 1</p>
+            <p class="mt-1 text-xs leading-5 text-slate-500">Presenza di ristagno d&#039;acqua dopo l&#039;intervento.</p>
+
+            <button
+              type="button"
+              data-lightbox="Dopo-pioggia-1.jpg"
+              data-caption="Dopo l&#039;intervento - Asfalto bagnato 1"
+              class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition"
+            >
+              Zoom dettagli
+            </button>
+          </div>
+        </article>
+      
+        <article class="photo-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow duration-300">
+          <button class="block w-full text-left" type="button" data-lightbox="Dopo-pioggia-2.jpg" data-caption="Dopo l&#039;intervento - Asfalto bagnato 2">
+            <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+              <img src="Dopo-pioggia-2.jpg" alt="Dopo l&#039;intervento - Asfalto bagnato 2" class="w-full h-full object-cover cursor-zoom-in" />
+            </div>
+          </button>
+
+          <div class="p-4">
+            <p class="text-sm font-medium text-slate-800">Dopo l&#039;intervento - Asfalto bagnato 2</p>
+            <p class="mt-1 text-xs leading-5 text-slate-500">Difetti di deflusso e possibile avvallamento localizzato.</p>
+
+            <button
+              type="button"
+              data-lightbox="Dopo-pioggia-2.jpg"
+              data-caption="Dopo l&#039;intervento - Asfalto bagnato 2"
+              class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition"
+            >
+              Zoom dettagli
+            </button>
+          </div>
+        </article>
+      
+        <article class="photo-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow duration-300">
+          <button class="block w-full text-left" type="button" data-lightbox="Dopo-pioggia-3.jpg" data-caption="Dopo l&#039;intervento - Asfalto bagnato 3">
+            <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+              <img src="Dopo-pioggia-3.jpg" alt="Dopo l&#039;intervento - Asfalto bagnato 3" class="w-full h-full object-cover cursor-zoom-in" />
+            </div>
+          </button>
+
+          <div class="p-4">
+            <p class="text-sm font-medium text-slate-800">Dopo l&#039;intervento - Asfalto bagnato 3</p>
+            <p class="mt-1 text-xs leading-5 text-slate-500">Accumulo d&#039;acqua e irregolarità della planarità superficiale.</p>
+
+            <button
+              type="button"
+              data-lightbox="Dopo-pioggia-3.jpg"
+              data-caption="Dopo l&#039;intervento - Asfalto bagnato 3"
+              class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition"
+            >
+              Zoom dettagli
+            </button>
+          </div>
+        </article>
+      
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+        <div>
+          <p class="text-sm font-semibold tracking-wide uppercase text-slate-500">Sezione 3</p>
+          <h2 class="mt-2 text-2xl sm:text-3xl font-semibold text-slate-900">
+            Dopo l&#039;intervento - Asfalto asciutto
+          </h2>
+        </div>
+
+        <p class="max-w-2xl text-sm sm:text-base text-slate-600">
+          Dettagli della finitura superficiale e delle anomalie visibili ad asfalto asciutto.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <article class="photo-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow duration-300">
+          <button class="block w-full text-left" type="button" data-lightbox="Dopo-asciutto-1.jpg" data-caption="Dopo l&#039;intervento - Asfalto asciutto 1">
+            <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+              <img src="Dopo-asciutto-1.jpg" alt="Dopo l&#039;intervento - Asfalto asciutto 1" class="w-full h-full object-cover cursor-zoom-in" />
+            </div>
+          </button>
+
+          <div class="p-4">
+            <p class="text-sm font-medium text-slate-800">Dopo l&#039;intervento - Asfalto asciutto 1</p>
+            <p class="mt-1 text-xs leading-5 text-slate-500">Inerti frantumati in superficie e finitura non omogenea.</p>
+
+            <button
+              type="button"
+              data-lightbox="Dopo-asciutto-1.jpg"
+              data-caption="Dopo l&#039;intervento - Asfalto asciutto 1"
+              class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition"
+            >
+              Zoom dettagli
+            </button>
+          </div>
+        </article>
+      
+        <article class="photo-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow duration-300">
+          <button class="block w-full text-left" type="button" data-lightbox="Dopo-asciutto-2.jpg" data-caption="Dopo l&#039;intervento - Asfalto asciutto 2">
+            <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+              <img src="Dopo-asciutto-2.jpg" alt="Dopo l&#039;intervento - Asfalto asciutto 2" class="w-full h-full object-cover cursor-zoom-in" />
+            </div>
+          </button>
+
+          <div class="p-4">
+            <p class="text-sm font-medium text-slate-800">Dopo l&#039;intervento - Asfalto asciutto 2</p>
+            <p class="mt-1 text-xs leading-5 text-slate-500">Carenza di legante bituminoso e tessitura superficiale aperta.</p>
+
+            <button
+              type="button"
+              data-lightbox="Dopo-asciutto-2.jpg"
+              data-caption="Dopo l&#039;intervento - Asfalto asciutto 2"
+              class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition"
+            >
+              Zoom dettagli
+            </button>
+          </div>
+        </article>
+      
+        <article class="photo-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow duration-300">
+          <button class="block w-full text-left" type="button" data-lightbox="Dopo-asciutto-dettaglio-3.jpg" data-caption="Dopo l&#039;intervento - Asfalto asciutto 3">
+            <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+              <img src="Dopo-asciutto-dettaglio-3.jpg" alt="Dopo l&#039;intervento - Asfalto asciutto 3" class="w-full h-full object-cover cursor-zoom-in" />
+            </div>
+          </button>
+
+          <div class="p-4">
+            <p class="text-sm font-medium text-slate-800">Dopo l&#039;intervento - Asfalto asciutto 3</p>
+            <p class="mt-1 text-xs leading-5 text-slate-500">Disgregazione superficiale e irregolarità visibili ad asfalto asciutto.</p>
+
+            <button
+              type="button"
+              data-lightbox="Dopo-asciutto-dettaglio-3.jpg"
+              data-caption="Dopo l&#039;intervento - Asfalto asciutto 3"
+              class="mt-4 inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition"
+            >
+              Zoom dettagli
+            </button>
+          </div>
+        </article>
+      
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-8">
+      <p class="text-sm text-slate-500 text-center">
+        Documentazione visiva a supporto dell&#039;accertamento tecnico dei vizi d&#039;opera.
+      </p>
+    </div>
+  </footer>
+
+  <div
+    id="lightbox"
+    class="lightbox fixed inset-0 z-50 bg-black/90 backdrop-blur-sm flex items-center justify-center p-4"
+    aria-hidden="true"
+  >
+    <button
+      id="closeLightbox"
+      type="button"
+      class="absolute top-4 right-4 sm:top-6 sm:right-6 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white text-2xl leading-none transition"
+      aria-label="Chiudi immagine"
+    >
+      &times;
+    </button>
+
+    <figure class="max-w-7xl w-full">
+      <img
+        id="lightboxImage"
+        src=""
+        alt=""
+        class="max-h-[84vh] w-full object-contain rounded-xl shadow-2xl"
+      />
+
+      <figcaption
+        id="lightboxCaption"
+        class="mt-4 text-center text-sm sm:text-base text-slate-200"
+      ></figcaption>
+    </figure>
+  </div>
+
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const closeLightbox = document.getElementById('closeLightbox');
+
+    function openLightboxModal(src, caption) {
+      lightboxImage.src = src;
+      lightboxImage.alt = caption;
+      lightboxCaption.textContent = caption;
+      lightbox.classList.add('active');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeLightboxModal() {
+      lightbox.classList.remove('active');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('overflow-hidden');
+
+      setTimeout(() => {
+        lightboxImage.src = '';
+        lightboxImage.alt = '';
+        lightboxCaption.textContent = '';
+      }, 250);
+    }
+
+    document.querySelectorAll('[data-lightbox]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const src = button.getAttribute('data-lightbox');
+        const caption = button.getAttribute('data-caption') || '';
+        openLightboxModal(src, caption);
+      });
+    });
+
+    closeLightbox.addEventListener('click', closeLightboxModal);
+
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) {
+        closeLightboxModal();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightboxModal();
+      }
+    });
+  </script>
+</body>
+</html>
